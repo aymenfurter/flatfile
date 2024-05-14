@@ -21,6 +21,9 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
+    - name: Add missing dependency
+      run: npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
     - name: Build
       run: npm run build
 
@@ -28,5 +31,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages
-        folder: dist
+        folder: build
         token: ${{ secrets.GITHUB_TOKEN }}
