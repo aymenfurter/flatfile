@@ -1,0 +1,31 @@
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background-color: #007aff;
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar .checkmark {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.progress-bar.completed .progress {
+  width: 100%;
+}
+
+.progress-bar.completed .checkmark {
+  opacity: 1;
+}

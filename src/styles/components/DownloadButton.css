@@ -1,0 +1,67 @@
+.download-button {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .download-button button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .download-button button:hover {
+    background-color: #166fe5;
+  }
+  
+  .download-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.4);
+  }
+  
+  .download-button button:disabled {
+    background-color: #e4e6eb;
+    color: #8d949e;
+    cursor: not-allowed;
+  }
+  
+  .download-button button:disabled:hover {
+    background-color: #e4e6eb;
+  }
+  
+  .download-button button::before {
+    content: '\2193';
+    margin-right: 0.5rem;
+  }
+  
+  .download-button button::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  
+  .download-button button:hover::after {
+    border-top-color: #fff;
+  }
+  
+  .download-button button:disabled::after {
+    border-top-color: #8d949e;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .download-button button {
+      font-size: 0.875rem;
+      padding: 0.625rem 1.25rem;
+    }
+  }
