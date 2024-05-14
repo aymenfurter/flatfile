@@ -1,6 +1,7 @@
 {
     "name": "fatfile",
     "version": "1.0.0",
+    "homepage": "https://aymenfurter.github.io/flatfile",
     "private": true,
     "dependencies": {
       "@testing-library/jest-dom": "^5.12.0",
